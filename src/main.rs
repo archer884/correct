@@ -1,4 +1,5 @@
 extern crate clap;
+extern crate num;
 extern crate strsim;
 mod params;
 mod sim;
