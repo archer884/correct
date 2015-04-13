@@ -1,0 +1,18 @@
+[root]
+name = "correct"
+version = "0.0.1"
+dependencies = [
+ "clap 0.5.14 (registry+https://github.com/rust-lang/crates.io-index)",
+ "strsim 0.2.3 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "clap"
+version = "0.5.14"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "strsim"
+version = "0.2.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
