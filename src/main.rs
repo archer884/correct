@@ -1,6 +1,7 @@
 extern crate clap;
 extern crate num;
 extern crate strsim;
+mod col;
 mod params;
 mod sim;
 
@@ -14,8 +15,7 @@ fn main() {
         }
     };
 
-    match sim::best_match(&params.dict, &params.word) {
-        Some(word) => println!("{}", word),
-        None => println!("No suggestions"),
+    for pair in sim::best_matches(&params.dict, &params.word, 5) {
+        println!("{:?}", pair);
     }
 }
